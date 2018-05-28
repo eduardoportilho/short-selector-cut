@@ -1,0 +1,22 @@
+{
+  "name": "Snippet-cut",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Snippet-cut",
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "src/contentscript.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
